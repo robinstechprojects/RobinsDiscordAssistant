@@ -24,9 +24,10 @@ git clone https://github.com/robinstechprojects/RobinsDiscordAssistant
 
 4) run main.py
 
-# Commands
+# Commands & Features
 ~ping - responses "Pong!"
 
+~wisdom - gives you some words of wisdom
 # Requirements
 
 - Python 3.4.2+
