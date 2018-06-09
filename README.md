@@ -1,5 +1,6 @@
 # RobinsDiscordAssistant
 
+This Software allows you to host your own Discord Bot. Since RDA is based on python language it can easily be used to host a Discord bot on a RaspberryPi.
 
 
 # Installation
