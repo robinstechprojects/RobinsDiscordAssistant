@@ -9,4 +9,4 @@ def ex(args, message, client, invoke):
         sammlung = datei.readlines()
         datei.close()
         zitat = random.choice(sammlung)
-    yield from client.send_message(message.author, zitat + args_out)
+        yield from client.send_message(message.author, zitat + args_out)
