@@ -26,6 +26,7 @@ git clone https://github.com/robinstechprojects/RobinsDiscordAssistant
 
 # Commands & Features
 ~ping - responses "Pong!"
+
 ~wisdom - gives you some words of wisdom
 # Requirements
 
