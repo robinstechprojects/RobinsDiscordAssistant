@@ -2,7 +2,7 @@
 
 
 
-#Installation
+# Installation
 
 1) First install the discord.py Library
 
@@ -19,9 +19,9 @@ git clone https://github.com/robinstechprojects/RobinsDiscordAssistant
 4) run main.py
 
 # Commands
-~ ping - responses "Pong!"
+~ping - responses "Pong!"
 
-#requirements
+# Requirements
 
 - Python 3.4.2+
 
