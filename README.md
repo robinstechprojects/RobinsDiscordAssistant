@@ -10,6 +10,11 @@ This Software allows you to host your own Discord Bot. Since RDA is based on pyt
 ```
 python3 -m pip install -U discord.py
 ```
+If you use Windows and the command python3 can´t be found, try 
+```
+python -m pip install -U discord.py
+```
+If this does not work either, you have to add Python 3 to your environment variables.
 
 2) Clone the RDA Repository or download the Software from releases Tab.
 ```
