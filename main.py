@@ -4,13 +4,14 @@ from discord import Embed
 import SECRETS
 import asyncio as asyncio
 
-from commands import cmd_ping, STATICS
+from commands import cmd_ping, STATICS, cmd_wisdom
 
 client = discord.Client()
 
 commands = {
 
-    "ping": cmd_ping
+    "ping": cmd_ping,
+    "wisdom": cmd_wisdom
 }
 
 
