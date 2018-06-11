@@ -30,7 +30,7 @@ git clone https://github.com/robinstechprojects/RobinsDiscordAssistant
 
 ~wisdom - gives you some words of wisdom
 
-~dice gives you a random number from 1-6 -> Can be used as a dice
+~dice - gives you a random number from 1-6 -> Can be used as a dice
 
 # Requirements
 
