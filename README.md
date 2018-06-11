@@ -25,9 +25,13 @@ git clone https://github.com/robinstechprojects/RobinsDiscordAssistant
 4) run main.py
 
 # Commands & Features
+
 ~ping - responses "Pong!"
 
 ~wisdom - gives you some words of wisdom
+
+~dice gives you a random number from 1-6 -> Can be used as a dice
+
 # Requirements
 
 - Python 3.4.2+
