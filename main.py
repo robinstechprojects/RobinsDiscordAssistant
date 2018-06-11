@@ -6,6 +6,8 @@ import asyncio as asyncio
 
 from commands import cmd_ping, STATICS, cmd_wisdom
 
+print("RDA - DiscordBotSoftware by RobinSchuetz started.")
+
 client = discord.Client()
 
 commands = {
