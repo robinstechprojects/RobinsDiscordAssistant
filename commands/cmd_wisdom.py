@@ -10,4 +10,4 @@ def ex(args, message, client, invoke):
     wisdoms = file.readlines()
     file.close()
     qoute = random.choice(wisdoms)
-    yield from client.send_message(message.author, qoute + args_out)
+    yield from client.send_message(message.channel, qoute + args_out)
