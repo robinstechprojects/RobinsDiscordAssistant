@@ -7,4 +7,5 @@ def ex(args, message, client, invoke):
     if len(args) > 0:
         args_out = "\n\n*Attatched arguments %s*" % args.__str__()[1:-1].replace("'", "")
     solution = randint(1, 6)
+    str(solution)
     yield from client.send_message(message.author, solution + args_out)
