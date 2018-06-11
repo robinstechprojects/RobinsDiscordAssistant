@@ -4,7 +4,7 @@ from discord import Embed
 import SECRETS
 import asyncio as asyncio
 
-from commands import cmd_ping, STATICS, cmd_wisdom
+from commands import cmd_ping, STATICS, cmd_wisdom, cmd_dice
 
 print("RDA - DiscordBotSoftware by RobinSchuetz started.")
 
@@ -13,7 +13,8 @@ client = discord.Client()
 commands = {
 
     "ping": cmd_ping,
-    "wisdom": cmd_wisdom
+    "wisdom": cmd_wisdom,
+    "dice": cmd_dice
 }
 
 
