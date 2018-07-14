@@ -23,7 +23,7 @@ commands = {
 def on_ready():
     print("Bot logged in successfully")
     for s in client.servers:
-        print(" - %s (%s)" % (s.name, s.id))
+        print((" - %s (%s)" % (s.name, s.id)))
     yield from client.change_presence(game=discord.Game(name="This is just a test"))
 
 
