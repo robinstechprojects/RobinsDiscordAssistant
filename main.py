@@ -39,4 +39,5 @@ def on_message(message):
         else:
             yield from client.send_message(message.author, embed=Embed(color=discord.Color.red(), description=("The command '%s' is not valid " % invoke)))
 
+
 client.run(SECRETS.token)
