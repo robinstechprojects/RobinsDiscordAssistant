@@ -14,7 +14,8 @@ commands = {
 
     "ping": cmd_ping,
     "wisdom": cmd_wisdom,
-    "dice": cmd_dice
+    "dice": cmd_dice,
+    "horn": cmd_horn
 }
 
 
