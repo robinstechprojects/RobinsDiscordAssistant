@@ -1,10 +1,6 @@
 
 
 def ex(args, message, client, invoke):
-
-    args_out = ""
-    if len(args) > 0:
-        args_out = "\n\n*Attatched arguments %s*" % args.__str__()[1:-1].replace("'", "")
         try:
             channel = message.author.voice.voice_channel
             voice = yield from client.join_voice_channel(channel)
