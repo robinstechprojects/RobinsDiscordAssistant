@@ -8,7 +8,7 @@ def ex(args, message, client, invoke):
             player.start()
         except Exception as exc:
             yield from client.send_message(message.channel, "Es ist ein Fehler aufgetreten. ```{ttt}```".format(ttt=exc))
-        voice_client = client.voice_client_in(message.server)
-        yield from voice_client.disconnect()
+
+
 
 
