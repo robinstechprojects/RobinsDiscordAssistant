@@ -6,6 +6,8 @@ def ex(args, message, client, invoke):
             voice = yield from client.join_voice_channel(channel)
             player = voice.create_ffmpeg_player('h.mp3')
             player.start()
+            voice_client = client.voice_client_in(message.server)
+            yield from voice_client.disconnect()
         except Exception as exc:
             yield from client.send_message(message.channel, "Es ist ein Fehler aufgetreten. ```{ttt}```".format(ttt=exc))
 
