@@ -4,7 +4,7 @@ from discord import Embed
 import SECRETS
 import asyncio as asyncio
 
-from commands import cmd_ping, STATICS, cmd_wisdom, cmd_dice
+from commands import cmd_ping, STATICS, cmd_wisdom, cmd_dice, cmd_horn
 
 print("RDA - DiscordBotSoftware by SunRobinDev started.")
 

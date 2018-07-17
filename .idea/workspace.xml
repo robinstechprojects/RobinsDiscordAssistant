@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f9692ac5-a68f-43eb-bb57-2f6eff8c9d36" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/commands/cmd_horn.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,11 +13,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+            <state relative-caret-position="88">
+              <caret line="6" column="70" selection-start-line="6" selection-start-column="70" selection-end-line="6" selection-end-column="70" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
               </folding>
@@ -27,11 +25,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cmd_horn.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="cmd_horn.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/commands/cmd_horn.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+            <state relative-caret-position="306">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
             </state>
           </provider>
         </entry>
@@ -66,8 +64,8 @@
       <file leaf-file-name="SECRETS.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SECRETS.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="26" lean-forward="true" selection-start-column="26" selection-end-column="26" />
+            <state relative-caret-position="17">
+              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
@@ -90,13 +88,13 @@
         <option value="$PROJECT_DIR$/commands/STATICS.py" />
         <option value="$PROJECT_DIR$/commands/cmd_ping.py" />
         <option value="$PROJECT_DIR$/commands/wisdoms.txt" />
-        <option value="$PROJECT_DIR$/SECRETS.py" />
         <option value="$PROJECT_DIR$/wisdoms.txt" />
         <option value="$PROJECT_DIR$/commands/dice.py" />
         <option value="$PROJECT_DIR$/commands/cmd_dice.py" />
         <option value="$PROJECT_DIR$/commands/cmd_wisdom.py" />
-        <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/commands/cmd_horn.py" />
+        <option value="$PROJECT_DIR$/SECRETS.py" />
+        <option value="$PROJECT_DIR$/main.py" />
       </list>
     </option>
   </component>
@@ -126,6 +124,11 @@
             </path>
             <path>
               <item name="DiscordBot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DiscordBot" type="462c0819:PsiDirectoryNode" />
+              <item name="Sounds" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DiscordBot" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
@@ -140,6 +143,9 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Robin\DiscordBot\Sounds" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Robin\DiscordBot" />
     </key>
@@ -581,27 +587,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SECRETS.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="26" lean-forward="true" selection-start-column="26" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/commands/cmd_ping.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" selection-start-line="1" selection-end-line="5" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -612,6 +601,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/commands/cmd_horn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/commands/cmd_wisdom.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -619,10 +615,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/commands/cmd_horn.py">
+    <entry file="file://$PROJECT_DIR$/SECRETS.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+        <state relative-caret-position="17">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="6" column="70" selection-start-line="6" selection-start-column="70" selection-end-line="6" selection-end-column="70" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
