@@ -4,7 +4,7 @@ from discord import Embed
 import SECRETS
 import asyncio as asyncio
 
-from commands import cmd_ping, STATICS, cmd_wisdom, cmd_dice, cmd_horn
+from commands import cmd_ping, STATICS, cmd_wisdom, cmd_dice, cmd_horn, cmd_gamingsong
 
 print("RDA - DiscordBotSoftware by SunRobinDev started.")
 
@@ -15,7 +15,8 @@ commands = {
     "ping": cmd_ping,
     "wisdom": cmd_wisdom,
     "dice": cmd_dice,
-    "horn": cmd_horn
+    "horn": cmd_horn,
+    "gamingsong": cmd_gamingsong
 }
 
 
@@ -25,7 +26,7 @@ def on_ready():
     print("Bot logged in successfully")
     for s in client.servers:
         print((" - %s (%s)" % (s.name, s.id)))
-    yield from client.change_presence(game=discord.Game(name="This is just a test"))
+    yield from client.change_presence(game=discord.Game(name="sunrobindev.de"))
 
 
 @client.event
