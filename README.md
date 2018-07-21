@@ -2,6 +2,10 @@
 
 This Software allows you to host your own Discord Bot. Since RDA is based on python language it can easily be used to host a Discord bot on a RaspberryPi.
 
+#Inivite
+To invite or RDA-based Discord bot to your Server use the following Link
+
+https://discordapp.com/oauth2/authorize?&client_id=325716079714369536&scope=bot&permissions=0
 
 # Installation
 
@@ -10,7 +14,7 @@ This Software allows you to host your own Discord Bot. Since RDA is based on pyt
 ```
 python3 -m pip install -U discord.py[voice]
 ```
-If you use Windows and the command python3 can´t be found, try 
+If you use Windows and the command python3 can´t be found, try
 ```
 python -m pip install -U discord.py[voice]
 ```
@@ -39,5 +43,3 @@ git clone https://github.com/robinstechprojects/RobinsDiscordAssistant
 - Python 3.4.2+
 - discord.py library with voice Support
 - ffmpeg
-
-
