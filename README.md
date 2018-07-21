@@ -4,7 +4,7 @@ This Software allows you to host your own Discord Bot. Since RDA is based on pyt
 
 # Inivite
 
-To invite or RDA-based Discord bot to your Server use the following Link
+To invite our RDA-based Discord bot to your Server use the following Link
 
 https://discordapp.com/oauth2/authorize?&client_id=325716079714369536&scope=bot&permissions=0
 
