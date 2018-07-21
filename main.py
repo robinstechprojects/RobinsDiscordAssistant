@@ -17,7 +17,8 @@ commands = {
     "dice": cmd_dice,
     "horn": cmd_horn,
     "gamingsong": cmd_gamingsong,
-    "chartsong": cmd_chartsong
+    "chartsong": cmd_chartsong,
+    "moep": cmd_moep
 }
 
 
