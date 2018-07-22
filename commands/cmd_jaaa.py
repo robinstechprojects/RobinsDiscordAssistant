@@ -10,7 +10,7 @@ def ex(args, message, client, invoke):
         except Exception as exc:
             yield from client.send_message(message.channel, "Es ist ein Fehler aufgetreten. ```{ttt}```".format(ttt=exc))
 
-        time.sleep(2)
+        time.sleep(4)
         yield from client.send_message(message.channel, "JAAA!!!!")
         voice_client = client.voice_client_in(message.server)
         yield from voice_client.disconnect()
