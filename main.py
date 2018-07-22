@@ -19,7 +19,7 @@ commands = {
     "gamingsong": cmd_gamingsong,
     "chartsong": cmd_chartsong,
     "moep": cmd_moep,
-    "jaaa": cmd_jaaa,
+    "jaaa": cmd_jaaa
 
 }
 
