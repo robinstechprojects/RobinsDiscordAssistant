@@ -7,7 +7,7 @@ def ex(args, message, client, invoke):
     if len(args) > 0:
         args_out = "\n\n*Attatched arguments %s*" % args.__str__()[1:-1].replace("'", "")
     client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    server_addr = ('185.249.199.49', 1338)
+    server_addr = ('185.249.199.220', 1338)
     client_socket.connect(server_addr)
     client_socket.send(bytes("gamingsong", "utf8"))
     song = client_socket.recv(1024)
