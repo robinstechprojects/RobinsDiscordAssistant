@@ -4,7 +4,7 @@ from discord import Embed
 import SECRETS
 import asyncio as asyncio
 
-from commands import cmd_ping, STATICS, cmd_wisdom, cmd_dice, cmd_horn, cmd_gamingsong, cmd_chartsong, cmd_moep, cmd_jaaa
+from commands import cmd_ping, STATICS, cmd_wisdom, cmd_dice, cmd_horn, cmd_gamingsong, cmd_chartsong, cmd_moep, cmd_jaaa, cmd_rapsong
 
 print("RDA - DiscordBotSoftware by SunRobinDev started.")
 
@@ -19,7 +19,8 @@ commands = {
     "gamingsong": cmd_gamingsong,
     "chartsong": cmd_chartsong,
     "moep": cmd_moep,
-    "jaaa": cmd_jaaa
+    "jaaa": cmd_jaaa,
+    "rapsong": cmd_rapsong
 
 }
 
