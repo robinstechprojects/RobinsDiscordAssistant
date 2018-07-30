@@ -17,4 +17,6 @@ def ex(args, message, client, invoke):
         client_socket.send(bytes(argstr, "utf8")) #send message (byte stream)
         song = client_socket.recv(1024)
         print(str(song, "utf8"))
+        yield from client.send_message(message.channel, "The Account has: " + str(song, "utf8") + "followers")
+
         client_socket.close()
