@@ -6,13 +6,12 @@ def ex(args, message, client, invoke):
     args_out = ""
     if len(args) > 0:
         args_out = "\n\n*Attatched arguments %s*" % args.__str__()[1:-1].replace("'", "")
-    client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    server_addr = ('185.249.199.220', 1338)
-    client_socket.connect(server_addr)
-    client_socket.send(bytes("tweetrequest", "utf8")
-    time.sleep(1)
-    argstr = str(args)
-    client_socket.send(bytes(argstr, "utf8"))
-    number = client_socket.recv(1024)
-    number2 = str(number, "utf8")
-    yield from client.send_message(message.channel, "The user  " + arg + "has " + number2 + " followers")
+client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM) #create InternetSocket for ipV4
+#SOCK_STREAM - TCP SOCK_DGRAM - UDP
+server_addr = ('185.249.199.220', 1338)
+client_socket.connect(server_addr) #connect the socket | UDP does not need connect
+client_socket.send(bytes("tweetrequest", "utf8")) #send message (byte stream)
+client_socket.send(bytes(args, "utf8")) #send message (byte stream)
+song = client_socket.recv(1024)
+print(str(song, "utf8"))
+client_socket.close()
