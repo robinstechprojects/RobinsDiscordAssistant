@@ -12,4 +12,5 @@ def ex(args, message, client, invoke):
     client_socket.send(bytes("tweetrequest", "utf8"))
     client_socket.send(bytes(args, "utf8"))
     number = client_socket.recv(1024)
-    yield from client.send_message(message.channel, "The user  " + args + "has " str(number, "utf8") + " followers")
+    number2 = str(number, "utf8")
+    yield from client.send_message(message.channel, "The user  " + args + "has " number2 + " followers")
