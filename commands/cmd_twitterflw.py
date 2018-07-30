@@ -12,7 +12,7 @@ def ex(args, message, client, invoke):
         server_addr = ('185.249.199.220', 1338)
         client_socket.connect(server_addr) #connect the socket | UDP does not need connect
         client_socket.send(bytes("tweetrequest", "utf8")) #send message (byte stream)
-        client_socket.send(bytes(argstr, "utf8")) #send message (byte stream)
+        client_socket.send(bytes("robinkannnix", "utf8")) #send message (byte stream)
         song = client_socket.recv(1024)
         print(str(song, "utf8"))
         client_socket.close()
