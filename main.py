@@ -4,12 +4,14 @@ from discord import Embed
 import SECRETS
 import asyncio as asyncio
 
+#import commandfiles
 from commands import cmd_ping, STATICS, cmd_wisdom, cmd_dice, cmd_horn, cmd_gamingsong, cmd_chartsong, cmd_moep, cmd_jaaa, cmd_rapsong, cmd_nightcore, cmd_metalsong, cmd_rocksong, cmd_twitterflw
 
-print("RDA - DiscordBotSoftware by SunRobinDev started.")
+print("RDA - DiscordBotSoftware by SunRobinDev started.") #start message
 
-client = discord.Client()
+client = discord.Client() #register new client
 
+#register commands
 commands = {
 
     "ping": cmd_ping,
@@ -29,26 +31,27 @@ commands = {
 }
 
 
+#async def when bot is connected
 @client.event
 @asyncio.coroutine
 def on_ready():
     print("Bot logged in successfully")
     for s in client.servers:
         print((" - %s (%s)" % (s.name, s.id)))
-    yield from client.change_presence(game=discord.Game(name="sunrobindev.de"))
+    yield from client.change_presence(game=discord.Game(name="sunrobindev.de")) #set status
 
-
+#commandparser
 @client.event
 @asyncio.coroutine
 def on_message(message):
-    if message.content.startswith(STATICS.PREFIX):
-        invoke = message.content[len(STATICS.PREFIX):].split(" ")[0]
+    if message.content.startswith(STATICS.PREFIX): #check for invoke
+        invoke = message.content[len(STATICS.PREFIX):].split(" ")[0] #parse the command
         args = message.content.split(" ")[1:]
         print("INVOKE: %s \nARGS: %s" % (invoke, args.__str__()[1:-1].replace("'", " ")))
         if commands.__contains__(invoke):
-            yield from commands.get(invoke).ex(args, message, client, invoke)
+            yield from commands.get(invoke).ex(args, message, client, invoke) #call execution def of commandfiles
         else:
-            yield from client.send_message(message.author, embed=Embed(color=discord.Color.red(), description=("The command '%s' is not valid " % invoke)))
+            yield from client.send_message(message.author, embed=Embed(color=discord.Color.red(), description=("The command '%s' is not valid " % invoke))) #message when invalid command is issued
 
 
-client.run(SECRETS.token)
+client.run(SECRETS.token) #start client
