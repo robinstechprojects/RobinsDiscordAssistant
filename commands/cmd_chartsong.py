@@ -1,4 +1,5 @@
 import random
+import langfile
 
 #execution def
 def ex(args, message, client, invoke):
@@ -10,4 +11,4 @@ def ex(args, message, client, invoke):
     song = file.readlines() #save all lines to ram
     file.close() #close the file
     title = random.choice(song) #choose random song
-    yield from client.send_message(message.channel, "Your Chart-Song suggestion is: " + title + args_out) # send message with song
+    yield from client.send_message(message.channel, langfile.lang_chartsong + title + args_out) # send message with song

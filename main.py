@@ -2,6 +2,7 @@ import discord
 from discord import Embed
 
 import SECRETS
+import langfile
 import asyncio as asyncio
 
 #import commandfiles
@@ -35,7 +36,7 @@ commands = {
 @client.event
 @asyncio.coroutine
 def on_ready():
-    print("Bot logged in successfully")
+    print(langfile.lang_login)
     for s in client.servers:
         print((" - %s (%s)" % (s.name, s.id)))
     yield from client.change_presence(game=discord.Game(name="sunrobindev.de")) #set status

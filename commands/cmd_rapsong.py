@@ -1,5 +1,5 @@
 import socket
-
+import langfile
 
 def ex(args, message, client, invoke):
 
@@ -11,4 +11,4 @@ def ex(args, message, client, invoke):
     client_socket.connect(server_addr)
     client_socket.send(bytes("rapsong", "utf8"))
     song = client_socket.recv(1024)
-    yield from client.send_message(message.channel, "Your Rap-Song suggestion is: " + str(song, "utf8") + args_out)
+    yield from client.send_message(message.channel, langfile.lang_rapsong + str(song, "utf8") + args_out)
