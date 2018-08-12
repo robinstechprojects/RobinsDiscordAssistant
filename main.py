@@ -36,7 +36,7 @@ commands = {
 @client.event
 @asyncio.coroutine
 def on_ready():
-    print(lang_login)
+    print(langfile.lang_login)
     for s in client.servers:
         print((" - %s (%s)" % (s.name, s.id)))
     yield from client.change_presence(game=discord.Game(name="sunrobindev.de")) #set status
