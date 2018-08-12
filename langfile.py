@@ -1,7 +1,7 @@
 lang_login = "Bot erfolgreich eingeloggt!"
 lang_gamingsong = "Dein Gaming-Songvorschlag: "
 lang_chartsong = "Dein Chart-Songvorschlag: "
-lang_hornerror = "Es ist ein Fehler aufgetreten!""
+lang_hornerror = "Es ist ein Fehler aufgetreten!"
 lang_horn = "Ich blase mein Horn !"
 lang_metalsong = "Dein Metal-Songvorschlag: "
 lang_nightcore = "Dein Nightcorevorschlag: "
