@@ -39,8 +39,9 @@ def on_ready():
     print(langfile.lang_login)
     for s in client.servers:
         print((" - %s (%s)" % (s.name, s.id)))
-    yield from client.change_presence(game=discord.Game(name="sunrobindev.de")) #set status
-
+    yield from client.change_presence(game=discord.Game(name="sunrobindev.de"))
+    channel = discord.utils.get(client.get_all_channels(),name='rda-bot')
+    yield from client.send_message(channel, "CHANGELOG: \n New features and other informaion about RDA will be posted to this Channel from now on!")
 #commandparser
 @client.event
 @asyncio.coroutine
