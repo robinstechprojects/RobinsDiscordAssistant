@@ -40,6 +40,14 @@ def on_ready():
     for s in client.servers:
         print((" - %s (%s)" % (s.name, s.id)))
     yield from client.change_presence(game=discord.Game(name="sunrobindev.de")) #set status
+    for server in bot.servers:
+        # Spin through every server
+        for channel in server.channels:
+            # Channels on the server
+            if channel.permissions_for(server.me).send_messages:
+                yield from bot.send_message(channel, "...")
+                # So that we don't send to every channel:
+                break
 
 #commandparser
 @client.event
